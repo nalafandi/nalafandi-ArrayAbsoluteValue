@@ -8,7 +8,13 @@ public class ArrayAbsoluteValue {
      * @param nums an array.
      * @return the absolute value array of nums.
      */
-    public int[] getArrayAbs(int[] nums){
-        return null;
+    public int[] getArrayAbs(int[] nums) {              
+
+        for (int i = 0; i < nums.length; i++) {  
+            if (nums[i] < 0) {
+                nums[i] = nums[i] * -1;
+            }            
+        }        
+        return nums;
     }
 }
